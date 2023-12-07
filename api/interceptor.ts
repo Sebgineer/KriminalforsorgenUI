@@ -1,7 +1,7 @@
 import { createFetch } from '@vueuse/core'
 
 export const useFetcher = createFetch({
-    baseUrl: 'https://fbmanage.dk/api',
+    baseUrl: 'localhost:80/api',
     combination: 'overwrite',
     options: {
         beforeFetch: (options) => {
